@@ -26,12 +26,12 @@
     <cm:property-placeholder persistent-id="com.savoir.apache.karaf.ai.gateway.whiteboard.plugin" update-strategy="reload">
         <cm:default-properties>
             <!-- Default values if no plugins config in etc folder -->
-            <cm:property name="localai_address" value="http://localhost:8082/v1"/>
+            <cm:property name="localai_address" value="http://localhost:8080/v1"/>
         </cm:default-properties>
     </cm:property-placeholder>
 
     <bean id="localai" class="com.savoir.apache.karaf.ai.gateway.whiteboard.plugin.LocalAIPlugin">
-        <argument value="gpt-4"/>
+        <argument value="deepseek-r1-distill-qwen-1.5b"/>
         <argument value="${localai_address}"/>
     </bean>
 
