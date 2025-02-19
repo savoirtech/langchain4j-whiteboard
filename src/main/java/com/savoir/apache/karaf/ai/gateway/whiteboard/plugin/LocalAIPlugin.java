@@ -40,7 +40,7 @@ public class LocalAIPlugin implements ExecutorPlugin {
                 .baseUrl(this.baseUrl)
                 .modelName(this.modelName)
                 .temperature(0.8)
-                .timeout(Duration.ofSeconds(60))
+                .timeout(Duration.ofSeconds(120))
                 .build();
     }
 
